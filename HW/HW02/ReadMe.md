@@ -30,12 +30,12 @@
 
 ### GIT을 이용하여 remote repository를 생성하고 git용 bash 로 새로 initialize한 local repository랑 연결하는 과정
 * 이미지 1번을 보시면 \
-    $ cd / <- cd는 Change Directory(폴더 이동)입니다. 기본적으로 'cd /'를 작성하여 경로를 설정해주고 \
+    $ cd / <- cd는 Change Directory(폴더 이동)입니다.
     $ cd c <- c드라이브로 이동해준 뒤 \
     $ mkdir test <- make directory(폴더 생성) test라는 이름의 폴더를 생성해주고 \
-    $ cd test <- 전에 만든 test 폴더로 이동해준 뒤 \
+    $ cd test <- test 폴더로 이동해준 뒤 \
     $ git init <- init은 initialize의 줄임말로, 깃 초기화를 해준 뒤 \
-    $ git branch -m master main <- 이 명령어를 사용하여 브랜치명을 master에서 main으로 변경해준 뒤
+    $ git branch -m master main <- 브랜치명을 변경하는 명령어 입니다.
 * 이미지 2번으로 넘어가서 \
     $ vi ReadMe.md <- vi는 Vim(Visual Editor Improved)의 줄임말입니다. 리드미 파일을 만들어준 뒤 \
     $ git status <- git status는 현재 작업 디렉토리의 상태를 보여주는 명령어입니다. \
@@ -43,7 +43,18 @@
     $ git status <- 전과 달리 ReadMe.md 파일이 추가되었다는 것을 볼 수 있습니다. \
     $ git commit <- 변경 사항을 로컬 저장소에 기록하는 명령어입니다. \
     $ git remote add origin 주소 <- origin은 원격 저장소의 별칭이고, 주소는 자신의 깃허브 주소 복붙하면 됩니다.
-* 이미지 3번으로 넘어가서
+* 이미지 3번으로 넘어가서 \
     $ git push <- 로컬 저장소의 변경 사항을 원격 저장소로 업로드하는 데 사용됩니다. \
     $ git push --set-upstream origin main <- 현재 로컬 브랜치를 원격 저장소의 지정된 브랜치로 푸시하도록 설정합니다. 'set-upstream' 옵션을 사용하여 해당 로컬 브랜치가 원격 브랜치와 연결되도록 설정하였습니다.
 
+### .gitignore 사용법과 작성방식 및 내용
+
+### ReadMe.md 파일에 사용된 Mark Down 표기법
+* 헤더 \
+    # 제목 1 '# 제목 1'
+    ## 제목 2 '## 제목 2'
+    ### 제목 3 '### 제목 3'
+    #### 제목 4 '#### 제목 4'
+    ##### 제목 5 '##### 제목 5'
+    ###### 제목 6 '###### 제목 6'
+* 목록 \
