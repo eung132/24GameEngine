@@ -67,7 +67,7 @@
 반전 패턴: 느낌표(!)는 반전 패턴을 나타냅니다. 즉, 특정 파일이나 디렉토리를 무시하지 않도록 할 수 있습니다. 예를 들어, !important.log는 important.log 파일을 무시하지 않습니다.
 
 * gitignore 내용 조사 \
-*rsuser,*.suo, *user, userosscache, stn.docstates: 사용자별 파일이나 Visual Studio 솔루션 상태 파일 등을 무시합니다.
+*rsuser, *.suo, *user, userosscache, stn.docstates: 사용자별 파일이나 Visual Studio 솔루션 상태 파일 등을 무시합니다.
 .userprefs: MonoDevelop/Kamarin Studio의 사용자 설정 파일을 무시합니다.
 mono_crash.: Mono 개발 환경에서 발생하는 크래시 덤프 파일을 무시합니다.
 [Dd]lebug/,[Rr]jelease/, x64/, ×86/, [Ww][li][Nn]/32/, [Aa][Rr][Mm]/, [Aa][Rr][Mm]64/,  bld/.[Bb]in/, [Oo]bj/, [Ll]og/, [Ll]ogs/: 빌드 결과물과 관련된 디렉토리들을 무시합니다.
@@ -80,7 +80,7 @@ BenchmarkDotNet.Artifacts/: BenchmarkDotNet 결과물을 무시합니다.
 project.lock.json, project.fragment.lock.json, artifacts/: .NET Core 프로젝트 관련 파일을 무시합니다.
 ScaffoldingReadMe.txt: ASP.NET Scaffolding의 README 파일을 무시합니다.
 StyleCopReport.xml: StyleCop 리포트 파일을 무시합니다.
-*_i.c,*_p.c,*_h.h,*.ilk,*.meta,*.obj,*.iobj,*.pch,*.pdb,*.ipdb,*.pgc, *.pgd,*.rsp,*.sbr,*.tlb, *.tli,*.tlh, *.tmp, *.tmp_proj, *_wpftmp.csproj, *.log,
+*_i.c, *_p.c, *_h.h, *.ilk, *.meta, *.obj, *.iobj, *.pch, *.pdb, *.ipdb, *.pgc, *.pgd, *.rsp, *.sbr, *.tlb, *.tli, *.tlh, *.tmp, *.tmp_proj, *_wpftmp.csproj, *.log,
 *.tlog, *.vspscc,*.vssscc, .builds,*pidb,*svclog,.scc: Visual Studio 에서 생성되는 빌드 및 임시 파일들을 무시합니다.
 _Chutzpah: Chutzpah 테스트 파일들을 무시합니다.
 ipch/, *.aps, *.ncb, *.opendb, *.opensdf, *.sdf, *.cachefile, *.VC.db, *.VC.VC.opendb: Visual C++ 관련 캐시 파일들을 무시합니다.
