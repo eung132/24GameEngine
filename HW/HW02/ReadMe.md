@@ -29,8 +29,12 @@
     또한 VCS는 중앙 서버에만 저장되기 때문에 중앙 서버에 장애가 발생할 시 데이터 손실의 위험이 있습니다.
 
 ### GIT을 이용하여 remote repository를 생성하고 git용 bash 로 새로 initialize한 local repository랑 연결하는 과정
-* IMG 파일에 1번을 보시면 \
-    cd / <- cd는 Change Directory(폴더 이동)입니다. 기본적으로 'cd /'를 작성하여 경로를 설정해주고 \
-    cd c <- c드라이브로 이동해준 뒤 \
-    mkdir test <- make directory(폴더 생성) test라는 이름의 폴더를 생성해주고 \
-    
+* 이미지 1번을 보시면 \
+    $ cd / <- cd는 Change Directory(폴더 이동)입니다. 기본적으로 'cd /'를 작성하여 경로를 설정해주고 \
+    $ cd c <- c드라이브로 이동해준 뒤 \
+    $ mkdir test <- make directory(폴더 생성) test라는 이름의 폴더를 생성해주고 \
+    $ cd test <- 전에 만든 test 폴더로 이동해준 뒤 \
+    $ git init <- init은 initialize의 약어로, 깃 초기화를 해준 뒤 \
+    $ git branch -m master main <- 이 명령어를 사용하여 브랜치명을 master에서 main으로 변경해준 뒤
+* 이미지 2번으로 넘어가서
+    $ vi ReadMe.md
