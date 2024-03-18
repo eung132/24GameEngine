@@ -34,7 +34,16 @@
     $ cd c <- c드라이브로 이동해준 뒤 \
     $ mkdir test <- make directory(폴더 생성) test라는 이름의 폴더를 생성해주고 \
     $ cd test <- 전에 만든 test 폴더로 이동해준 뒤 \
-    $ git init <- init은 initialize의 약어로, 깃 초기화를 해준 뒤 \
+    $ git init <- init은 initialize의 줄임말로, 깃 초기화를 해준 뒤 \
     $ git branch -m master main <- 이 명령어를 사용하여 브랜치명을 master에서 main으로 변경해준 뒤
-* 이미지 2번으로 넘어가서
-    $ vi ReadMe.md
+* 이미지 2번으로 넘어가서 \
+    $ vi ReadMe.md <- vi는 Vim(Visual Editor Improved)의 줄임말입니다. 리드미 파일을 만들어준 뒤 \
+    $ git status <- git status는 현재 작업 디렉토리의 상태를 보여주는 명령어입니다. \
+    $ git add . <- git add는 깃에서 파일을 추가하는 데 사용됩니다. add 뒤에 .은 모든 파일을 추가해준다는 것입니다. \
+    $ git status <- 전과 달리 ReadMe.md 파일이 추가되었다는 것을 볼 수 있습니다. \
+    $ git commit <- 변경 사항을 로컬 저장소에 기록하는 명령어입니다. \
+    $ git remote add origin 주소 <- origin은 원격 저장소의 별칭이고, 주소는 자신의 깃허브 주소 복붙하면 됩니다.
+* 이미지 3번으로 넘어가서
+    $ git push <- 로컬 저장소의 변경 사항을 원격 저장소로 업로드하는 데 사용됩니다. \
+    $ git push --set-upstream origin main <- 현재 로컬 브랜치를 원격 저장소의 지정된 브랜치로 푸시하도록 설정합니다. 'set-upstream' 옵션을 사용하여 해당 로컬 브랜치가 원격 브랜치와 연결되도록 설정하였습니다.
+
