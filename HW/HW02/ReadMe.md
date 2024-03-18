@@ -50,7 +50,7 @@
     $ git push --set-upstream origin main <- 현재 로컬 브랜치를 원격 저장소의 지정된 브랜치로 푸시하도록 설정합니다. 'set-upstream' 옵션을 사용하여 해당 로컬 브랜치가 원격 브랜치와 연결되도록 설정하였습니다.
 
 ### .gitignore 사용법과 작성방식 및 내용
-* 사용법
+* 사용법 \
 새로운 .gitignore 파일 생성: 프로젝트 루트 디렉토리에 gitignore 파일을 만듭니다. 만약 이미 gitignore 파일이 있다면 그 파일을 입니다.
 원하는 내용 추가: gitignore 파일에는 Git이 추적하지 않아야 하는 파일 및 디렉토리의 패턴을 추가합니다. 예를 들어, Visual Studio 프로젝트의 경우 Visual Studio에서 생성하는 빌드 결과물, 임시 파일 등을 추가할 수 있습니다.
 패턴 추가 방법: 파일이나 디렉토리 이름을 직접 작성합니다. 예를 들어, bin/ 또는 .Suo. 와일드카드0를 사용하여 패턴을 작성할 수 있습니다. 예 를 들어, log는 확장자가 log인 모든 파일을 무시합니다.
@@ -58,7 +58,7 @@
 주석 추가: 필요에 따라 주석을 추가하여 다른 개발자가 gitignore 파일을 이해하도록 돕습니다.
 저장 및 커밋: gitignore 파일을 저장하고 Git 저장소에 커밋합니다. 이제 Git은 gitignore에 명시된 파일 및 디렉토리를 무시합니다.
 
-* 작성방식
+* 작성방식 \
 파일 무시: 특정 파일을 무시하려면 해당 파일의 이름을 .gitignore 파일에 적습니다. 예를 들어, example.txt를 무시하려면 example.tt라고 gitignore 파일에 추가하면 됩니다.
 와일드카드: 와일드카드(*)는 여러 파일을 한 번에 지정하는 데 사용됩니다. 예를 들어, log는 모든 확장자가 log인 파일을 무시합니다. *은 모든 것을 나타냅니다. 따라서 *만 사용하면 모든 파일을 무시합니다.
 디렉토리 무시: 디렉토리를 무시하려면 해당 디렉토리의 이름을 gitignore 파일에 추가합니다. 예를 들어, logs/는 logs 디렉토리와 그 하위 디렉 토리를 모두 무시합니다.
@@ -66,7 +66,7 @@
 부분 경로 지정: 패턴은 부분 경로를 지정할 수 있습니다. 예를 들어, **/logs/는 모든 하위 디렉토리에 있는 logs 디렉토리를 무시합니다.
 반전 패턴: 느낌표(J)는 반전 패턴을 나타냅니다. 즉, 특정 파일이나 디렉토리를 무시하지 않도록 할 수 있습니다. 예를 들어, !important.log는 important.log 파일을 무시하지 않습니다.
 
-* gitignore 내용 조사
+* gitignore 내용 조사\
 *rsuser,*.Suo, *user, userosscache, stn.docstates: 사용자별 파일이나 Visual Studio 솔루션 상태 파일 등을 무시합니다.
 •userprefs: MonoDevelop/Kamarin Studio의 사용자 설정 파일을 무시합니다.
 mono_crash.: Mono 개발 환경에서 발생하는 크래시 덤프 파일을 무시합니다.
@@ -84,10 +84,10 @@ StyleCopReport.xml: StyleCop 리포트 파일을 무시합니다.
 *.tlog, *.vspscc,*vssscc, builds,*pidb,*svclog,.scc: Visual Studio 에서 생성되는 빌드 및 임시 파일들을 무시합니다.
 _ Chutzpah: Chutzpah 테스트 파일들을 무시합니다.
 ipch/, *.aps, *ncb, *.opendb, *.opensdf, *.sdf, *.cachefile, *.VC.db, *.VC.VC.opendb: Visual C++ 관련 캐시 파일들을 무시합니다.
-*psess, *.VSp, *.vspx, * sap: Visual Studio 프로파일러 파일들을 무시합니다.
+*.psess, *.VSp, *.vspx, *.sap: Visual Studio 프로파일러 파일들을 무시합니다.
 *.e2e: Visual Studio 추적 파일들을 무시합니다.
 $tf/: TFS 2012 Local Workspace 파일들을 무시합니다.
-* gpState: Guidance Automation Toolkit 상태 파일을 무시합니다.
+*.gpState: Guidance Automation Toolkit 상태 파일을 무시합니다.
 
 ### ReadMe.md 파일에 사용된 Mark Down 표기법
 * 헤더는 '#' 뒤에 내용을 작성하면 되고 '#'을 1~6개 사용하냐에 따라 크기가 달라집니다.
