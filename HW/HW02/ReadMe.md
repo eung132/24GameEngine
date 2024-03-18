@@ -28,4 +28,4 @@
     제한이 있을 수 있습니다.
     또한 VCS는 중앙 서버에만 저장되기 때문에 중앙 서버에 장애가 발생할 시 데이터 손실의 위험이 있습니다.
 
-
+### GIT을 이용하여 remote repository를 생성하고 git용 bash 로 새로 initialize한 local repository랑 연결하는 과정
