@@ -65,7 +65,7 @@
 * 링크는 [링크 이름]과 (URL)을 붙여서 작성하는 것입니다. \
 ex) [네이버](https://www.naver.com/)
 
-* 이미지는 ![대체 텍스트]와 (이미지 URL)을 붙여서 작성하는 것입니다.
+* 이미지는 ![대체 텍스트]와 (이미지 URL)을 붙여서 작성하는 것입니다. \
 ex) ![이미지](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140926_79%2Fcocogirls204_1411722886778kY5sR_JPEG%2F%25B1%25CD%25BF%25A9%25BF%25EE_%25C2%25A9%252C_%25BF%25A1%25BA%25F1%25C3%25F2_%25C2%25A9_%25B8%25F0%25C0%25BD4.jpg&type=ff332_332)
 
 * 강조는 '*', '**', 
