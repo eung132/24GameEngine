@@ -72,7 +72,7 @@ int main()
             cout << "\n프로그램을 종료합니다." << endl;
             return 0;
         }
-        if ((num == 0) || (num > ColorMask::EXIT))
+        if ((num <= 0) || (num > ColorMask::EXIT))
         {
             cout << "\n잘못 입력한 코드입니다. 재입력하세요.\n" << endl;
         }
