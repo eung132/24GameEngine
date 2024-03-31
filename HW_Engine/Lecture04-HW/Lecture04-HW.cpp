@@ -4,12 +4,9 @@
 // 라이브러리 종속성 추가
 #pragma comment(lib, "opengl32.lib")
 
-<<<<<<< HEAD
 bool isLeftButtonPressed = false;
 bool isRightButtonPressed = false;
 
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
 void errorCallback(int error, const char* description)
 {
     std::cerr << "GLFW Error: " << description << std::endl;
@@ -29,19 +26,13 @@ void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
     {
         if (action == GLFW_PRESS)
         {
-<<<<<<< HEAD
             isLeftButtonPressed = true;
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
             // 녹색창
             glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         }
         else if (action == GLFW_RELEASE)
         {
-<<<<<<< HEAD
             isLeftButtonPressed = false;
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
             // 거믕색
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         }
@@ -50,46 +41,55 @@ void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
     {
         if (action == GLFW_PRESS)
         {
-<<<<<<< HEAD
             isRightButtonPressed = true;
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
             // 빨간색창
             glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
         }
         else if (action == GLFW_RELEASE)
         {
-<<<<<<< HEAD
             isRightButtonPressed = false;
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
             // 거믕색
             glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         }
     }
 }
 
-<<<<<<< HEAD
+double PreXpos = 0, PreYpos = 0;
 void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos)
 {
+
     if (isLeftButtonPressed)
     {
-        // 왼쪽 마우스를 누른 상태에서 드래그할 때는 마젠타색으로 설정
-        glClearColor(1.0f, 0.0f, 1.0f, 1.0f); // 마젠타색
+        if ((PreXpos == xpos) || (PreYpos == ypos))
+        {
+            glClearColor(0.0f, 1.0f, 0.0f, 1.0f);// 녹색
+        }
+        else
+        {
+            // 왼쪽 마우스를 누른 상태에서 드래그할 때는 마젠타색으로 설정
+            glClearColor(1.0f, 0.0f, 1.0f, 1.0f); // 마젠타색
+        }
     }
     else if (isRightButtonPressed)
     {
-        // 오른쪽 마우스를 누른 상태에서 드래그할 때는 파란색으로 설정
-        glClearColor(0.0f, 0.0f, 1.0f, 1.0f); // 파란색
+        if ((PreXpos == xpos) || (PreYpos == ypos))
+        {
+            glClearColor(1.0f, 0.0f, 0.0f, 1.0f);// 빨간색
+        }
+        else
+        {
+            // 오른쪽 마우스를 누른 상태에서 드래그할 때는 파란색으로 설정
+            glClearColor(0.0f, 0.0f, 1.0f, 1.0f); // 파란색
+        }
     }
     else
     {
         // 마우스 버튼을 누르지 않은 상태에서는 검은색 배경 유지
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     }
+    PreXpos = xpos; PreYpos = ypos;
+
 }
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
 
 int main(void)
 {
@@ -106,16 +106,14 @@ int main(void)
         glfwTerminate();
         return -1;
     }
+ 
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
     glfwSetErrorCallback(errorCallback);
     glfwSetKeyCallback(window, keyCallback);
     glfwSetMouseButtonCallback(window, mouseButtonCallback);
-<<<<<<< HEAD
     glfwSetCursorPosCallback(window, cursorPositionCallback);
-=======
->>>>>>> 353299f5d5f1fb477cc4ce7e16d91037a060316c
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
