@@ -58,7 +58,7 @@ void cursorPosCallback(GLFWwindow* window, double xpos, double ypos)
         double deltaX = xpos - prevMouseX;
         double deltaY = ypos - prevMouseY;
 
-        glTranslatef(deltaX * movementSpeed, -deltaY * movementSpeed, 0.0f); // 이동량에 속도를 곱해 부드럽게 이동
+        glTranslatef(deltaX * movementSpeed, -deltaY * movementSpeed, 0.0f);
 
         prevMouseX = xpos;
         prevMouseY = ypos;
@@ -75,7 +75,7 @@ void cursorPosCallback(GLFWwindow* window, double xpos, double ypos)
         {
             scaleFactor -= 0.1f;
             if (scaleFactor < 0.1f)
-                scaleFactor = 0.1f; // 최소 축소 비율 제한
+                scaleFactor = 0.1f;
         }
 
         prevMouseX = xpos;
